@@ -26,16 +26,7 @@ public class SecurityConfig  {
 
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder encoder){
-////        UserDetails admin= User.withUsername("Isha")
-////                .password(encoder.encode("noooooo"))
-////                .roles("ADMIN")
-////                .build();
-//        UserDetails user=User.withUsername("Pujan")
-//                .password(encoder.encode("hiiiiii"))
-//                .roles("USER")
-//                .build();
-//
-//        return new InMemoryUserDetailsManager(user);
+
 
         return new CustomerService();
     }
